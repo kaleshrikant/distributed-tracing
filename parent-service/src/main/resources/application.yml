@@ -6,3 +6,21 @@ server:
   servlet:
     context-path: /parent-service
   port: 9001
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  endpoints:
+    web:
+      exposure:
+        include: prometheus
+  metrics:
+    distribution:
+      percentiles-histogram:
+        http:
+          server:
+            requests: true
+logging:
+  pattern:
+    level: %5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]
