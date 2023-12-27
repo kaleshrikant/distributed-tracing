@@ -1,11 +1,11 @@
-package com.spring.boot.child.controller.config;
+package com.spring.boot.parent.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 @Configuration
-public class ChildConfig {
+public class ParentConfig {
 
     @Bean
     public RestTemplate restTemplate(){
