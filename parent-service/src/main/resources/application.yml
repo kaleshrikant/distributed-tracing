@@ -1,6 +1,6 @@
 spring:
   application:
-    name: parent-service
+    name: "Parent"
 
 server:
   servlet:
