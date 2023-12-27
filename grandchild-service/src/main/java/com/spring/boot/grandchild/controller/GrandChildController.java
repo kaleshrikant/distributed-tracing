@@ -20,7 +20,4 @@ public class GrandChildController {
         log.info("Grandchild was called ...");
         return grandChildService.greeting();
     }
-
-
-
 }
