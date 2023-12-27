@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: parent-service
+
+server:
+  servlet:
+    context-path: /parent-service
+  port: 9001

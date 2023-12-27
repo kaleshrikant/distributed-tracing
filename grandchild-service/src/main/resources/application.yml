@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: grandchild-service
+
+server:
+  servlet:
+    context-path: /grandchild-service
+  port: 9003

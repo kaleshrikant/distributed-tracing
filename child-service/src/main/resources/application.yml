@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: child-service
+
+server:
+  servlet:
+    context-path: /child-service
+  port: 9002
